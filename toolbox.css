@@ -1,0 +1,48 @@
+#myZToolbox {
+    position: fixed;
+    top:                    0;
+    right:                  0;
+    margin:                 4px;
+    opacity:                1;
+    height:                 500px;
+    width:                  350px;
+    z-index:                16777271;
+    background:             white;
+}
+
+
+
+#clickButton {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#textBox{
+    position: absolute;
+    top: 50px;
+    left: 0px;
+}
+#targetTypeSelect{
+    position: absolute;
+    top: 100px;
+    left: 0px;
+}
+
+#actionSelect{
+    position: absolute;
+    top: 150px;
+    left: 0px;
+}
+
+#myClose {
+    top:                    5px;
+    right:                  8px;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+}
+#myClose:hover {
+    cursor: pointer;
+    color:#aaa;
+}

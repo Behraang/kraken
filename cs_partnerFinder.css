@@ -1,0 +1,42 @@
+﻿#myContainer {
+    position: fixed;
+    top:                    0;
+    left:                   0;
+    margin:                 4px;
+    opacity:                0.9;
+    height:                 58px;
+    width:                  250px;
+    z-index:                16777271;
+    background:             white;
+}
+#myTxtBox{
+    position:absolute;
+    width: 160px;
+    top: 4px;
+    left: 4px;    
+}
+#mySearch {
+    position:absolute;
+    top: 4px;
+    left: 170px;
+}
+#myLoadSelect{
+    position:absolute;
+    top: 30px;
+}
+#myMessage{
+    position:absolute;
+    top: 30px;
+    left: 6px;
+}
+#myClose {
+    top:                    5px;
+    right:                  8px;
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+}
+#myClose:hover {
+    cursor: pointer;
+    color:#aaa;
+}

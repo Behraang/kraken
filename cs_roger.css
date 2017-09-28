@@ -1,0 +1,84 @@
+﻿#myContainer {
+	position: fixed;
+	top:                    0;
+	left:                   0;
+	margin:                 4px;
+	height:                 200px;
+	width:                  300px;
+	z-index:                16777271;
+	background: #fff;
+	overflow: hidden;
+}	
+
+#titleBar{
+	width: 100%;
+	height: 40px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #4285F4;
+}
+
+#title{
+	margin-top: 5px;
+	margin-left: 5px;
+	color: white;	
+}
+
+#textContent{
+	position: absolute;
+	top: 40px;
+	left: 10px;
+	padding: 20 px;
+	white-space: nowrap;
+}
+
+
+#myTrivagoURL{
+	position:absolute;
+	left: 39%;
+	top: 113px;
+}
+
+#myDebuggerURL{
+	position:absolute;
+	left: 40%;
+	top: 132px;
+}
+
+#myGenerate {
+	right: 0px;
+}
+#myHistory {
+	left: 0px;
+}
+
+#myHistory, #myGenerate{
+	height: 30px;
+	width: 50%;	
+	position:absolute;
+	top: 170px;
+	background-color: #4285F4;
+	color: #ecf0f1;
+}
+
+#myHistory:active, #myGenerate:active{
+		background-color: #94BDFD;		
+}	
+
+#myClose {
+	top: 5px;
+	right: 10px;
+	position: absolute;
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+}
+
+#myClose:active {
+	color:#E0E0E0;
+}
+
+#myClose:hover{
+	cursor: default;
+}

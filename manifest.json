@@ -1,0 +1,68 @@
+{
+  "manifest_version": 2,
+  "name": "Kraken",
+  "short_name": "Kraken",
+  "description": "Team AQM Extension",
+  "version": "0.3.4",
+  "options_page": "options.html",
+  "browser_action": {
+    "default_icon": {
+        "16": "/img/icons/icon_16x16.png",
+        "32": "/img/icons/icon_32x32.png",
+		    "64": "/img/icons/icon_64x64.png"
+    },
+    "default_popup": "popup.html",
+	  "default_title": "Kraken"
+  },
+  "icons": {
+    "16": "/img/icons/icon_16x16.png",
+    "32": "/img/icons/icon_32x32.png", 
+    "64": "/img/icons/icon_64x64.png"  
+  },
+  "omnibox": {
+      "keyword": "trv"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*","https://*/*"],
+		  "css": ["cs_rTinderHelper.css", "md.css"],
+		  "js": ["jquery.js","cs_rTinderHelper.js"]
+    },
+	  {
+		  "matches": ["https://*/*"],
+		  "css": ["toolbox.css"],
+		  "js": ["jquery.js","toolbox.js"]
+    },
+    {
+		  "matches": ["https://*/*"],
+		  "include_globs": ["*www.trivago.*", "*ar.trivago.*"],
+		  "css": ["cs_partnerFinder.css", "md.css"],
+		  "js": ["jquery.js","cs_partnerFinder.js","cs_trv2Debugger.js"]
+	  },
+	  {
+	  	"matches": ["https://docs.google.com/forms/d/e/1FAIpQLSfexWlYnCqKEzH85xtFTAQPxBUdobFgqxB4X1i3tI7aWKOGOg/viewform*"],
+		  "css": ["cs_roger.css", "md.css"],
+		  "js": ["jquery.js","cs_roger.js","sd_advertisers.js","sd_locales.js"]
+	  },
+	  {
+	  	"matches": ["https://docs.google.com/forms/d/e/1FAIpQLSfexWlYnCqKEzH85xtFTAQPxBUdobFgqxB4X1i3tI7aWKOGOg/formResponse*"],
+		  "js": ["jquery.js","formSubmitted.js"]
+	  }
+  ],
+  "background": {
+	  "scripts": ["bg_contextMenu.js", "bg_omnibox.js","sd_advertisers.js","sd_locales.js"],		
+	  "persistent": false
+  },
+  "chrome_url_overrides": {
+	  "newtab": "newTab.html"
+  },
+  "permissions": [
+	"downloads",
+    "storage",
+    "contextMenus",
+    "tabs",
+	"<all_urls>",
+    "https://ajax.googleapis.com/"
+  ]
+  
+}

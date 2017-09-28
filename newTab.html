@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="newTab.css">
+<link rel="stylesheet" href="md.css">
+
+<title>AQM Bookmarks</title>
+<body>
+	<div id = "container">
+		<div id = "roundButton" class ="roundButton md_hoverCard">
+			<p class="plus">+</p>
+		</div>
+		<div id="addCard" class = "md_card md_card-3">
+			<div id= "addCardTitleBar"><p>Custom Card</p>
+			<span id = "myClose">x</span>
+			</div>
+				<div id="addContent">
+					<input id="inputFileToLoad" type="file" /><br><br>
+					Description: <input id = "addDescription" type="text" name="description" placeholder="youtube.com"><br><br>
+					URL: <input type="text" id = "addURL" name="URL" placeholder="https://www.youtube.com/"><br>
+				</div>	
+				<div id="imgHolder"><img id = "newImage" /><p> 200 x 150 </p></div>
+			<button id="createCardButton" class = "md_btn" >Create Card</button>
+		</div>
+		<script src="newTab.js"></script>
+	</div>
+</body>
+</html>
